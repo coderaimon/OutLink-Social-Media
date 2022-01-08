@@ -1,0 +1,57 @@
+@media (max-width:500px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .search {
+        display: none;
+    }
+    .body-wrap {
+        flex-direction: column;
+    }
+    .posts {
+        width: 22rem;
+        margin: auto;
+    }
+    .side-nav {
+        display: none;
+    }
+}
+
+/* for tablet size devices */
+@media (min-width:501px) and (max-width:800px){
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .search {
+        display: none;
+    }
+    .body-wrap {
+        flex-direction: column;
+    }
+    .posts {
+        width: 25rem;
+        margin: auto;
+    }
+    .side-nav {
+        display: none;
+    }
+}
+/* extra large device */
+@media (min-width:801px) and (max-width:1024px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .body-wrap {
+        flex-direction: column;
+    }
+    .posts {
+        width: 25rem;
+        margin: auto;
+    }
+    .side-nav {
+        display: none;
+    }
+}

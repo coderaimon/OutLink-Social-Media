@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* starting of login form */
+.login {
+    background: #e6e6e6;
+    padding: 1.5rem;
+    display: grid;
+    row-gap: 15px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px #555555;
+}
+
+.login h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: arial;
+    font-weight: 900;
+}
+
+.log-inp {
+    background: #cacaca;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.log-inp input {
+    border: none;
+    outline: none;
+    background: #cacaca;
+    font-size: 16px;
+}
+
+.login button {
+    border: none;
+    background: #0044ff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover{
+    opacity: 0.5;
+}
+
+.login small{
+    text-align: center;
+    font-family: arial;
+}
+
+.login small a {
+    text-decoration: none;
+    color: blue;
+}
+
+.cradit{
+    font-family: arial;
+    margin-top: 1.3%;
+}
+
+.cradit a {
+    text-decoration: none;
+    color: #217bff;
+    font-weight: 600;
+}
+/* end of login form */
+
+/* startting of sign form */
+.signup {
+    width: 22rem;
+    padding: 1.5rem;
+    background: #e6e6e6;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px #555555;
+    padding-bottom: 2rem;
+}
+/* sign up heading */
+.signup h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+/* sign up inputs */
+.signup input {
+    border: none;
+    outline: none;
+    padding: 12px 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #cacaca;
+    color: black;
+    border-radius: 30px;
+}
+
+.signup input:nth-child(2), .signup input:nth-child(3) {
+    width: 49.1%;
+}
+
+.signup button {
+    width: 100%;
+    display: block;
+    padding: 13px 15px;
+    border: none;
+    background: #0044ff;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.signup button:hover{
+    opacity: 0.5;
+}
+
+.signup small {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+
+.signup small a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* show errors for blank field */
+.error {
+    background: #db1f1fa8 !important;
+    padding: 10px 14px !important;
+    margin-bottom: 10px !important;
+    border-radius: 8px !important;
+    color: white !important;
+}
+/* forms */
+@media (max-width:380px) {
+    .signup {
+        width: 19rem;
+    }
+}
+
+
+/* Email verification system design */
+.verify-em {
+    width: 20rem;
+    background: #e6e6e6;
+    padding: 2rem;
+    display: grid;
+    row-gap: 0.57rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 12px #939393;
+}
+.verify-em input {
+    border: none;
+    outline: none;
+    padding: 9px 13px;
+    letter-spacing: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #cacaca;
+}
+.verify-em button {
+    border: none;
+    padding: 11px 10px;
+    border-radius: 5px;
+    background: #22a4ff;
+    color: white;
+    cursor: pointer;
+}
+.verify-em small {
+    display: grid;
+    grid-template-columns: 34% 18%;
+    justify-content: space-between;
+}
+.verify-em small a {
+    text-decoration: none;
+    color: #0044ff;
+    font-weight: 500;
+}
+
+/* <*****************account ban page****************> */
+.ban-box {
+    width: 22rem;
+    background: #e6e6e6;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 3px 3px 12px #939393;
+    display: grid;
+    row-gap: 0.5rem;
+}
+.ban-box p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.ban-box a {
+    text-decoration: none;
+    color: #005bff;
+    font-weight: 600;
+}
+
+/* forgot password page design */
+.fp-wrap {
+    background: #e6e6e6;
+    width: 20rem;
+    height: 22rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 12px #939393;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fp-wrap a {
+    text-decoration: none;
+    color: white;
+    background: #0050ff;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* email input section */
+.fp-email {
+    display: grid;
+    row-gap: 1rem;
+}
+.fp-email input {
+    border: none;
+    outline: none;
+    background: #cacaca;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 14px;
+}
+.fp-email button {
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+/* fp code section */
+.fp-code {
+    display: grid;
+    text-align: center;
+    row-gap: 10px;
+}
+.fp-code p {
+    font-size: 13px;
+}
+.fp-code input {
+    border: none;
+    outline: none;
+    background: #cacaca;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    padding: 10px 15px;
+    text-align: center;
+}
+.fp-code button{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* set new password */
+.fp-new-pass{
+    display: grid;
+    row-gap: 10px;
+}
+.fp-new-pass input {
+    border: none;
+    background: #cacaca;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+.fp-new-pass button{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
