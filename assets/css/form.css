@@ -98,6 +98,7 @@
 }
 /* sign up inputs */
 .signup input {
+    font-size: 13px;
     border: none;
     outline: none;
     padding: 12px 14px;

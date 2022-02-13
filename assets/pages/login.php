@@ -1,6 +1,13 @@
-<body class="body">
+<div class="body">
     <form class="login" method="post" action="assets/php/action.php?login">
         <h3>Log in</h3>
+        <?php
+        if (isset($_GET['signupsuccess'])) {
+        ?>
+            <span class="text-success text-center">Your account successfully created!</span>
+        <?php
+        }
+        ?>
         <div class="log-inp">
             <span><i class="fas fa-user"></i></span>
             <input type="text" value="<?= showformdata('loguser') ?>" name="loguser" placeholder="Username/Email" />
@@ -17,3 +24,4 @@
         <small>Forgot password? <a href="?forgot_pass&np">reset</a></small>
     </form>
     <span class="cradit">Developer <a href="">Aimon Islam</a></span>
+</div>

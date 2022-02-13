@@ -2,7 +2,7 @@
 global $user;
 ?>
 
-<body class="body">
+<div class="body">
     <form class="verify-em" method="post" action="assets/php/action.php?verify_email">
         <h3>Verify email</h3>
         <span>Enter the 6 digit code sended to <small>(<?= $user['email'] ?>)</small></span>
@@ -19,3 +19,4 @@ global $user;
         <button type="submit">Verify email</button>
         <small><a href="assets/php/action.php?resend_code">Resend code</a><a href="assets/php/action.php?logout">Logout</a></small>
     </form>
+</div>

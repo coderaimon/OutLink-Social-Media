@@ -1,57 +1,207 @@
-@media (max-width:500px) {
-    .container{
-        width: 100%;
-        overflow: hidden;
-    }
-    .search {
-        display: none;
-    }
-    .body-wrap {
-        flex-direction: column;
-    }
-    .posts {
-        width: 22rem;
-        margin: auto;
-    }
-    .side-nav {
-        display: none;
-    }
+@media (max-width: 370px) {
+  .posts {
+    width: 100% !important;
+  }
+  .post-footer {
+    grid-template-columns: 12% 11% 11% 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav-wrap.container {
+    justify-content: center;
+    overflow: initial;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 78%;
+    left: unset;
+    right: -8%;
+  }
+  img.logo {
+    display: none;
+  }
+  .options {
+    width: 100%;
+    grid-template-columns: 5% 7% 6% 4% 4% 7%;
+    justify-content: space-between;
+  }
+  .search {
+    display: none;
+  }
+  .body-wrap {
+    flex-direction: column;
+  }
+  .posts {
+    width: 100%;
+    margin: auto;
+  }
+  .impnew {
+    width: 100% !important;
+  }
+  .side-nav {
+    display: none;
+  }
+  .verify-em {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* for tablet size devices */
-@media (min-width:501px) and (max-width:800px){
-    .container{
-        width: 100%;
-        overflow: hidden;
-    }
-    .search {
-        display: none;
-    }
-    .body-wrap {
-        flex-direction: column;
-    }
-    .posts {
-        width: 25rem;
-        margin: auto;
-    }
-    .side-nav {
-        display: none;
-    }
+@media (min-width: 501px) and (max-width: 800px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .options {
+    width: 18rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8% 8% 8% 6% 7% 10%;
+    justify-content: space-between;
+  }
+  .nav-wrap.container {
+    overflow: initial;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 78%;
+    left: unset;
+    right: -8%;
+  }
+  .search {
+    display: none;
+  }
+  .body-wrap {
+    flex-direction: column;
+  }
+  .posts {
+    width: 25rem;
+    margin: auto;
+  }
+  .impnew {
+    width: 100% !important;
+  }
+  .side-nav {
+    display: none;
+  }
 }
 /* extra large device */
-@media (min-width:801px) and (max-width:1024px) {
-    .container{
-        width: 100%;
-        overflow: hidden;
-    }
-    .body-wrap {
-        flex-direction: column;
-    }
-    .posts {
-        width: 25rem;
-        margin: auto;
-    }
-    .side-nav {
-        display: none;
-    }
+@media (min-width: 801px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav-wrap.container {
+    overflow: initial;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 78%;
+    left: unset;
+    right: -8%;
+  }
+  .body-wrap {
+    flex-direction: column;
+  }
+  .posts {
+    width: 25rem;
+    margin: auto;
+  }
+  .impnew {
+    width: 100% !important;
+  }
+  .side-nav {
+    display: none;
+  }
+  .fr_sug_wrap {
+    width: 47rem !important;
+    justify-content: center;
+    overflow: initial !important;
+  }
+}
+
+@media (max-width: 1210px) {
+  .side-nav {
+    width: 20rem;
+    padding-top: 2rem;
+    position: fixed;
+    top: 8%;
+    right: 15%;
+  }
+}
+
+/* profiles */
+@media (max-width: 500px) {
+  .container.col-9.rounded-0 {
+    width: 100%;
+  }
+  .profile-wrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: unset !important;
+    margin: 0;
+    padding: 0 !important;
+    align-items: center;
+  }
+  .profile-pp {
+    width: 100%;
+    justify-content: center !important;
+  }
+  .dpp-col {
+    width: 100%;
+  }
+  .pp-us-config {
+    gap: unset !important;
+    justify-content: space-between;
+  }
+  .f-user {
+    grid-template-columns: 2.4rem 55% 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    overflow: unset;
+  }
+  .fr_sug_wrap {
+    width: unset;
+    grid-template-columns: 20rem !important;
+    overflow: initial;
+  }
+}
+
+@media (max-width: 575px) {
+  .comment {
+    grid-template-columns: 2.5rem auto;
+  }
+}
+
+/* messege section */
+@media (max-width:600px) {
+  .chat-wrap {
+      display: initial;
+  }
+  .chats {
+      width: 100%;
+      height: 100vh;
+  }
+  .messeges{
+      display: none;
+  }
+  .msgactive {
+      display: flex !important;
+      position: absolute;
+      top: 0;
+  }
+  .chat-body {
+      height: unset;
+  }
+}
+
+@media (min-width:601px) and (max-width:899px) {
+  .chats {
+      width: 45%;
+  }
 }
