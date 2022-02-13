@@ -1,0 +1,5 @@
+1/ you need to set up Database in config.php file
+
+2/ You need to set you email and password in to send_email.php file
+
+3/ set up properly to run code.
